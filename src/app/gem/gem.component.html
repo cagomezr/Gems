@@ -1,3 +1,33 @@
-<p>
-  gem works!
-</p>
+<div *ngIf="gem">
+	
+	<div  class="hero card">		
+        <div class="card-header">
+            <h2>
+		        {{gem.name}}
+	        </h2>
+        </div>
+        <div class="card-header">
+           <div class=frame>
+               <span class="helper"></span>
+               <img src="{{gem.img_url}}" />
+            </div>  
+        </div>
+        
+		<div class="card-body">
+			<ul>
+			    <li><strong>Description</strong> : {{gem.description}}</li>	
+	            <li><strong>Formula</strong> : {{gem.formula}}</li>
+            	<li><strong>Crystal Structure</strong> : {{gem.crystal_structure}}</li>
+                <li><strong>Color</strong> : {{gem.color}}</li>
+                <li><strong>Hardness</strong> : {{gem.hardness}}</li>
+                <li><strong>Refractive Index</strong> : {{gem.refractive_index}}</li>
+                <li><strong>Density</strong> : {{gem.density}}</li>
+                <li><strong>Cleavage</strong> : {{gem.cleavage}}</li>	
+                <li><strong>Transparency</strong> : {{gem.transparency}}</li>
+                <li><strong>Birefringence</strong> : {{gem.birefringence}}</li>
+                <li><strong>Luster</strong> : {{gem.luster}}</li>
+                <li><strong>Fluorescence</strong> : {{gem.fluorescence}}</li>
+			</ul>
+		</div>
+	</div> 	
+</div>

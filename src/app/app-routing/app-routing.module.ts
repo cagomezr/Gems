@@ -24,6 +24,7 @@ const appRoutes: Routes = [
     CommonModule,
 	RouterModule.forRoot(appRoutes,{enableTracing:true})  
   ],
-  declarations: [RouterModule]
+  declarations: [],
+exports:[RouterModule]	
 })
 export class AppRoutingModule { }

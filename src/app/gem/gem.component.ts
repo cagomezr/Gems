@@ -12,9 +12,19 @@ import {Gem} from '../gem'
 })
 export class GemComponent implements OnInit {
 
-  constructor() { }
+  public gem: Gem;    
+  constructor(private activatedRoute:ActivatedRoute ,private gemsService: GemsService) { }
 
   ngOnInit() {
+     this.activatedRoute.params.subscribe((params:Params)=>{
+		  this.gemsService.getGems().then(response => {
+		   const gems= response["data"]
+		 		console.log( response["data"]);
+		  		 for(let key in  gems){
+					 if(gems[key]['id'].toString() === params['id']){this.gem = gems[key]}
+				 }
+	  		});														
+		});
   }
 
 }

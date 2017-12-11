@@ -1,0 +1,22 @@
+/*vertical image  and  width fixes*/
+.frame {
+   height: 16em;
+    width: 90%;
+    white-space: nowrap;    
+    text-align: center; 
+    margin: 0 auto;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.frame>img {
+    background: #3A6F9A;
+    vertical-align: middle;
+    max-width: 90%;
+}
+/*vertical image  and  width fixes*/
+.gemslink{padding: 1em;}

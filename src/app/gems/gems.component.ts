@@ -10,9 +10,14 @@ import {Gem} from '../gem'
 })
 export class GemsComponent implements OnInit {
 
-  constructor() { }
+ public gems: Gem[];    
+  constructor(private gemsService: GemsService) { }
 
   ngOnInit() {
+      this.gemsService.getGems().then(response => {
+		 this.gems = response["data"];
+		 console.log( this.gems);
+	  });
   }
 
 }
