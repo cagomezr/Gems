@@ -1,10 +1,11 @@
 /*vertical image  and  width fixes*/
 .frame {
-   height: 16em;
-    width: 90%;
+   height: 17em;
+    width: 80%;
     white-space: nowrap;    
     text-align: center; 
     margin: 0 auto;
+    
 }
 
 .helper {
@@ -19,4 +20,3 @@
     max-width: 90%;
 }
 /*vertical image  and  width fixes*/
-.gemslink{padding: 1em;}

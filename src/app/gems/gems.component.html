@@ -1,20 +1,19 @@
 
-<p>
-  Gems works!
-</p>
-<div *ngIf="gems" class="row" >
-<a  href="gem/{{gem.id}}"   *ngFor="let gem of gems" class="col-12 col-sm-4 gemslink">
-	<div  class="hero card">		
 
-        <div class="card-header">
+<div *ngIf="gems" class="row" >
+<a  href="gem/{{gem.id}}"   *ngFor="let gem of gems" class="box30 gemslink">
+	<div  class=" box">		
+
+        <div class="box-header">
            <div class=frame>
                <span class="helper"></span>
                <img src="{{gem.img_url}}" />
             </div>  
         </div>
-		<div class="card-body">
+		<div class="box-body">
 			{{gem.name}}
 		</div>
 	</div> 		
  </a>
 </div>
+<div class="clear"></div>

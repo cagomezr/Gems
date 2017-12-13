@@ -15,8 +15,7 @@ export class GemsComponent implements OnInit {
 
   ngOnInit() {
       this.gemsService.getGems().then(response => {
-		 this.gems = response["data"];
-		 console.log( this.gems);
+		 this.gems = response["data"];		 
 	  });
   }
 

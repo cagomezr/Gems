@@ -18,8 +18,7 @@ export class GemComponent implements OnInit {
   ngOnInit() {
      this.activatedRoute.params.subscribe((params:Params)=>{
 		  this.gemsService.getGems().then(response => {
-		   const gems= response["data"]
-		 		console.log( response["data"]);
+		   const gems= response["data"];		 		
 		  		 for(let key in  gems){
 					 if(gems[key]['id'].toString() === params['id']){this.gem = gems[key]}
 				 }
