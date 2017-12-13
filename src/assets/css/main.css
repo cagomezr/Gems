@@ -2,7 +2,7 @@
 body{margin: 0;font-family:arial;}
 h2{font-family: 'Rouge Script', cursive; font-size: 3em;}
 nav{background: #15224f; padding: 1em 0;    }
-.nav-link{color:#FFF; font-weight: 500; font-size:2em; text-decoration: none;}
+.nav-link{color:#FFF; font-weight: 500; font-size:2em; text-decoration: none;padding: 0 5%;}
 footer{background: #15224f;color:#FFF;margin-top: 2em; padding: 1em;font-family: 'Rouge Script', cursive; font-size: 1.5em;}
 a:hover{text-decoration: none;}
 .container{max-width:1000px; margin:0 auto;display:block;}
@@ -10,28 +10,29 @@ a:hover{text-decoration: none;}
 span{display: block; padding:.5em 0 ;line-height: 1.5em}
 strong{display: block;}
 .mobHide{display:none;}
+h2{margin: .35em 0 .025em; }
 /*overall*/
 /*box grid*/
 .box50{width:40%;padding: 2em 5%; float:left;}
-.box30 {width: 28%;display: block;float: left; padding: 1.5%;text-decoration: none}
+.box30 {width: 30%;display: block;float: left; padding: 1.5%;text-decoration: none}
 /*box grid*/
 /*gems specific*/
 .box{border-radius: 1em; border:lightblue 1px solid; overflow: hidden;}
 .box-body{text-align: center; font-weight: 500;background: #15224f;color:#FFF; font-size:3em; font-family: 'Rouge Script', cursive;}
 /*gems specific*/
-
-
-
-@media only screen and (max-width: 800px)  {.box30{width:45%;}}
+@media only screen and (max-width: 800px)  {.box30{width: 40%;padding: 1em 5%;}}
 
 @media only screen and (max-width: 500px) {
     /*overall*/
     .deskHide{display:none;}
     .mobHide{display:block;}
+    .nav-link{ width: 90%; padding: 0 .5em;}
     strong{padding: .25em 0;}
     /*overall*/
     /*box grid*/
-    .box50{width:90%;margin:0 auto; float:none;}    
+    .box50{width:90%;margin:0 auto; float:none;padding: 0em 5%;} 
+    .box50:first-of-type{padding: .5em 5% 0em ;}
     .box30{width:70%; min-width:280px; float:none; margin:0 auto;}
+    
     /*box grid*/
 }
