@@ -3,7 +3,7 @@ body{margin: 0;font-family:arial;}
 h2{font-family: 'Rouge Script', cursive; font-size: 3em;}
 nav{background: #15224f; padding: 1em 0;    }
 .nav-link{color:#FFF; font-weight: 500; font-size:2em; text-decoration: none;}
-footer{background: #15224f;color:#FFF;margin-top: 2em; padding: 1em;}
+footer{background: #15224f;color:#FFF;margin-top: 2em; padding: 1em;font-family: 'Rouge Script', cursive; font-size: 1.5em;}
 a:hover{text-decoration: none;}
 .container{max-width:1000px; margin:0 auto;display:block;}
 .clear{clear: both;}
