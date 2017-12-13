@@ -22,6 +22,8 @@
                 <span><strong>Birefringence :</strong> {{gem.birefringence}}</span>
                 <span><strong>Luster :</strong> {{gem.luster}}</span>
                 <span><strong>Fluorescence :</strong> {{gem.fluorescence}}</span>
+				<span *ngIf="gem.created_at"><strong>Created At :</strong> {{gem.created_at}}</span>
+                <span *ngIf="gem.updated_at"><strong>Updated At :</strong> {{gem.updated_at}}</span>
 		
 		</div>
 	<div  class="clear">	
