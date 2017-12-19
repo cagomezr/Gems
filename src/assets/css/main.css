@@ -32,7 +32,7 @@ h2{margin: .35em 0 .025em; }
     /*box grid*/
     .box50{width:90%;margin:0 auto; float:none;padding: 0em 5%;} 
     .box50:first-of-type{padding: .5em 5% 0em ;}
-    .box30{width:70%; min-width:280px; float:none; margin:0 auto;}
+    .box30{width:90%; float:none; margin:0 auto;}
     
     /*box grid*/
 }
