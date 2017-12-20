@@ -19,11 +19,16 @@ h2{margin: .35em 0 .025em; }
 /*gems specific*/
 .box{border-radius: 1em; border:lightblue 1px solid; overflow: hidden;}
 .box-body{text-align: center; font-weight: 500;background: #15224f;color:#FFF; font-size:3em; font-family: 'Rouge Script', cursive;}
+.jumbotron { padding: 1rem .5rem; margin-bottom: 0rem; background-color: #FFF; }
+.jumbotron>p{font-size:2em;font-family: 'Dancing Script', cursive;}
+h1{font-family: 'Rouge Script', cursive;font-size: 4em; margin: .25em 0em;}
+
 /*gems specific*/
 @media only screen and (max-width: 800px)  {.box30{width: 40%;padding: 1em 5%;}}
 
 @media only screen and (max-width: 500px) {
     /*overall*/
+	
     .deskHide{display:none;}
     .mobHide{display:block;}
     .nav-link{ width: 90%; padding: 0 .5em;}
